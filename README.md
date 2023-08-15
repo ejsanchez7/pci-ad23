@@ -1,2 +1,3 @@
-# pci-ad23
-Repo para almacenar los ejercicios y ejemplos de clase de "Pensamiento Computacional para Ingeniería" semestre AD23
+**Este es mi proyecto**
+
+Considero que es interesante porque
