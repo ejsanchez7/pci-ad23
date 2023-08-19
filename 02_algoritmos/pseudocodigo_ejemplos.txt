@@ -1,0 +1,88 @@
+===================================
+ SUMAR PARES MENORES O IGUALES A N
+===================================
+
+ENTRADAS:
+    n => entero
+
+PROCESO: Algoritmo
+
+1.- PEDIR n
+2.- DEFINIR contador = 0
+3.- DEFINIR suma = 0
+4.- MIENTRAS contador <= n
+    4.1.- SI contador % 2 = 0
+        4.1.2.- SUMAR total + contador
+    4.2.- SUMAR contador + 1
+5.- IMPRIMIR total
+
+SALIDA:
+    -suma: entero
+
+=============================
+ CONVERTIR DECIMAL A BINARIO
+=============================
+
+ENTRADAS:
+    decimal => entero
+
+ALGORITMO:
+
+1.- PEDIR decimal
+2.- DEFINIR binario = ""
+3.- DEFINIR resto = decimal
+4.- MIENTRAS resto >= 2
+    4.1- residuo = resto % 2
+    4.2.- resto = resto / 2
+    4.3.- ANEXAR a la izquierda de binario residuo
+5.- ANEXAR a la izquierda de binario resto
+6.- MOSTRAR binario
+
+SALIDAS:
+    binario => cadena (string)
+
+==================
+ INVERSO NUMÉRICO
+==================
+
+ENTRADAS:
+    numero => entero
+
+ALGORITMO
+
+1.- PEDIR numero
+2.- DEFINIR inverso = 0
+3.- MIENTRAS numero >= 10
+    3.1.- residuo = numero % 10
+    3.2.- numero = numero / 10 (division entera)
+    3.3.- inverso = inverso * 10
+    3.4.- inverso = inverso + residuo
+4.- inverso = inverso * 10
+5.- inverso = inverso + num
+6.- MOSTRAR inverso
+
+SALIDAS:
+    inverso => numero
+
+==========
+ ES PRIMO
+==========
+
+ENTRADAS:
+    numero => entero
+
+ALGORITMO:
+
+1.- PEDIR numero
+2.- DEFINIR divisores = 0
+3.- DESDE contador = 2 HASTA contador = (numero - 1)
+    3.1.- SI numero % contador = 0
+        3.1.1.- divisores = divisores + 1
+4.- SI divisores > 0
+    4.1.- MOSTRAR "No es primo"
+5.- SINO
+    4.2.- MOSTRAR "Es primo"
+        
+
+SALIDAS:
+    "Es primo"/"No es primo" => cadena
