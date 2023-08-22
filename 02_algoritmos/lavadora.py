@@ -18,25 +18,20 @@ if cantidad_ropa <= 15 :
     # 2.3.- Preguntar si se va a exprimir
     exprimir = input("Exprimir? ")
     tiempo_total = 0
+    tiempo_carga = 3 * cantidad_ropa / 10
 
     # 2.4.- SI lavar  = "si"
     if lavar == "si" :
         # 2.4.1.- Sumar a total 25
-        tiempo_total += 25
-        # 2.4.2.- Calcular el tiempo de carga de agua
-        tiempo_carga = 3 * cantidad_ropa / 10
         # 2.4.3.- Sumar a total el tiempo de carga
         # tiempo_total = tiempo_total + tiempo_carga
-        tiempo_total += tiempo_carga
+        tiempo_total += 25 + tiempo_carga
     # 2.5.- SI enjuagar = "si"
     if enjuagar == "si" :
         # 2.5.1.- Sumar a total 10
-        tiempo_total += 10
-        # 2.5.2.- Calcular el tiempo de carga de agua
-        tiempo_carga = 3 * cantidad_ropa / 10
         # 2.5.3.- Sumar a total el tiempo de carga
         # tiempo_total = tiempo_total + tiempo_carga
-        tiempo_total += tiempo_carga
+        tiempo_total += 10 + tiempo_carga
     # 2.6.- SI exprimir = "si"
     if exprimir == "si" :
         # 2.6.1.- Sumar a total 10
