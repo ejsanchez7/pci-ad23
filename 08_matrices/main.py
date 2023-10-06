@@ -1,3 +1,7 @@
+"""
+Inicia una matriz de 3 x 3 con los números del 1 al 9 
+y la devuelve
+"""
 def inicia_matriz() :
     matriz = []
     contador = 1
@@ -10,12 +14,20 @@ def inicia_matriz() :
 
     return matriz
 
+"""
+Imprime los valores de una matriz de cualquier tamaño
+renglón por renglón con los valores separados por coma
+"""
 def imprime_matriz(matriz) :
     for i in range(len(matriz)) : # 0, 1, 2, 3
         for j in range(len(matriz[i])) : # 0, 1, 2
             print(matriz[i][j], end = ", ")
         print("")
 
+"""
+Suma los valores de dos matrices, A y B, del mismo tamaño
+y los guarda en una matriz C que es devuelta
+"""
 def suma_matriz(matriz_a, matriz_b) :
     matriz_suma = []
     for i in range(len(matriz_a)) :
